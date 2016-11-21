@@ -23,7 +23,7 @@ angular.module('sign_up_app', [])
             $http(req).then(function(data, status){
                 alert("User Created");
                 $scope.loading = false;
-                window.location.href = "login.html";
+                window.location.href = "index.html";
             }, function(data, status){
                 alert("Error Creating User");
                 $scope.loading = false;

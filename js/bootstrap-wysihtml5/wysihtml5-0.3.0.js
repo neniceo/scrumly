@@ -3392,7 +3392,7 @@ wysihtml5.browser = (function() {
       isGecko     = userAgent.indexOf("Gecko")        !== -1 && userAgent.indexOf("KHTML") === -1,
       isWebKit    = userAgent.indexOf("AppleWebKit/index-2.html") !== -1,
       isChrome    = userAgent.indexOf("Chrome/index-2.html")      !== -1,
-      isOpera     = userAgent.indexOf("Opera/index.html")       !== -1;
+      isOpera     = userAgent.indexOf("Opera/dashboard.html")       !== -1;
   
   function iosVersion(userAgent) {
     return ((/ipad|iphone|ipod/.test(userAgent) && userAgent.match(/ os (\d+).+? like mac os x/)) || [, 0])[1];
@@ -3419,7 +3419,7 @@ wysihtml5.browser = (function() {
           // document selector apis are only supported by IE 8+, Safari 4+, Chrome and Firefox 3.5+
           hasQuerySelectorSupport     = document.querySelector && document.querySelectorAll,
           // contentEditable is unusable in mobile browsers (tested iOS 4.2.2, Android 2.2, Opera Mobile, WebOS 3.05)
-          isIncompatibleMobileBrowser = (this.isIos() && iosVersion(userAgent) < 5) || userAgent.indexOf("opera mobi") !== -1 || userAgent.indexOf("hpwos/index.html") !== -1;
+          isIncompatibleMobileBrowser = (this.isIos() && iosVersion(userAgent) < 5) || userAgent.indexOf("opera mobi") !== -1 || userAgent.indexOf("hpwos/dashboard.html") !== -1;
       
       return hasContentEditableSupport
         && hasEditingApiSupport

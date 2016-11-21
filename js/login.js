@@ -27,7 +27,7 @@ angular.module('login_app', [])
 				if(data.data !== null )
 				{
 					alert("Login is successful")
-					window.location.href = ("blank.html");
+					window.location.href = ("dashboard.html");
 				}
 				else
 					alert("Login failed. Please input correct credentials");
